@@ -2,48 +2,50 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import '../App.css'
 
+const workImage = (file) => `${import.meta.env.BASE_URL}work-images/${file}`
+
 const projects = [
   {
     tag: 'RECENT SHOT / 01',
     title: 'NEXORA SAAS LANDING PAGE',
     desc: 'SaaS landing exploration focused on premium UI visuals and conversion-oriented structure.',
     link: 'https://dribbble.com/shots/27206981-Nexora-SaaS-Landing-Page',
-    image: '/work-images/nexora.webp',
+    image: workImage('nexora.webp'),
   },
   {
     tag: 'RECENT SHOT / 02',
     title: 'MODERN LOGIN UI FOR VHIGU WEB PORTAL',
     desc: 'Modern authentication experience emphasizing clarity, trust, and polished interaction.',
     link: 'https://dribbble.com/shots/27204484-Modern-Login-UI-for-Vhigu-Web-Portal',
-    image: '/work-images/modern-login-vhigu.webp',
+    image: workImage('modern-login-vhigu.webp'),
   },
   {
     tag: 'RECENT SHOT / 03',
     title: 'PREMIUM LANDING PORTAL FOR EMPLOYEES',
     desc: 'Employee-focused landing concept balancing hierarchy, navigation, and clean readability.',
     link: 'https://dribbble.com/shots/27203406-Premium-Landing-Portal-for-Employees',
-    image: '/work-images/premium-landing-employees.webp',
+    image: workImage('premium-landing-employees.webp'),
   },
   {
     tag: 'RECENT SHOT / 04',
     title: 'PREMIUM ALBUM DESIGN',
     desc: 'Editorial and visual composition work crafted for premium album presentation.',
     link: 'https://dribbble.com/shots/27203367-Premium-Album-Design',
-    image: '/work-images/premium-album.webp',
+    image: workImage('premium-album.webp'),
   },
   {
     tag: 'RECENT SHOT / 05',
     title: 'PREMIUM LOGO DESIGNING',
     desc: 'Brand identity exploration with logo direction for premium-focused positioning.',
     link: 'https://dribbble.com/shots/27203103-PREMIUM-LOGO-DESIGNING',
-    image: '/work-images/premium-logo.webp',
+    image: workImage('premium-logo.webp'),
   },
   {
     tag: 'RECENT SHOT / 06',
     title: 'PREMIUM DESIGN FOR LANDING PAGE',
     desc: 'Landing page concept focused on sharp typography, spacing, and visual impact.',
     link: 'https://dribbble.com/shots/27198586-Premium-Design-for-Landing-Page',
-    image: '/work-images/premium-landing-design.webp',
+    image: workImage('premium-landing-design.webp'),
   },
 ]
 

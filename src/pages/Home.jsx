@@ -7,6 +7,7 @@ import cvPdf from '../../PoorvithDevang(3rd- Year).pdf'
 
 function Home() {
   const canvasRef = useRef(null)
+  const featuredWorkImage = (file) => `${import.meta.env.BASE_URL}work-images/${file}`
   const cvLink = cvPdf
   const whatsappLink = `https://wa.me/918618488332?text=${encodeURIComponent(
     'Hi there, Can we talk to project',
@@ -261,7 +262,7 @@ frameworks and clean, maintainable code.
                       className="project-bg"
                       style={{
                         backgroundImage:
-                          "linear-gradient(to top, rgba(14,14,14,0.95), transparent), url('/work-images/nexora.webp')",
+                          `linear-gradient(to top, rgba(14,14,14,0.95), transparent), url('${featuredWorkImage('nexora.webp')}')`,
                       }}
                     >
                       <div className="dot-overlay" />
@@ -283,7 +284,7 @@ frameworks and clean, maintainable code.
                       className="project-bg"
                       style={{
                         backgroundImage:
-                          "linear-gradient(to top, rgba(14,14,14,0.95), transparent), url('/work-images/modern-login-vhigu.webp')",
+                          `linear-gradient(to top, rgba(14,14,14,0.95), transparent), url('${featuredWorkImage('modern-login-vhigu.webp')}')`,
                       }}
                     >
                       <div className="dot-overlay" />
